@@ -19,7 +19,7 @@ console.log('done loading')
 document.querySelector('.questionPromptSection').style.display = 'none'
 document.querySelector('#Register').addEventListener('click', Register)
 document.querySelector('#start_game').addEventListener('click', PlayGame)
-
+document.querySelector('#results').addEventListener('click', findPercentageScore)
 document.querySelector('#end_game').addEventListener('click', resetBoard)
 
 // ------------------------------------------------ FUNCTION DEFINITIONS
@@ -122,6 +122,7 @@ function Register(event) {
         document.getElementById("Register").disabled = true
         document.getElementById("Play").disabled = false
         document.getElementById("end_game").disabled = false
+        document.getElementById("play_again").disabled = false
 
     }//ENDS IF STATEMENT
 
