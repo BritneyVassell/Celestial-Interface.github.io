@@ -9,7 +9,7 @@ body{
 }
 
 header{
-	background:url('../Media/Images/HeaderBackground.png');
+	background:url('./Media/Images/HeaderBackground.png');
 	color: #004AAD;
 	padding-top: 10px;
 	padding-bottom: 10px;
