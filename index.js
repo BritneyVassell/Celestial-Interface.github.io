@@ -123,6 +123,7 @@ function Register(event) {
         document.getElementById("Play").disabled = false
         document.getElementById("end_game").disabled = false
         document.getElementById("play_again").disabled = false
+        document.getElementById("results").disabled = false
 
     }//ENDS IF STATEMENT
 
