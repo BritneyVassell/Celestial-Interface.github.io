@@ -12,7 +12,7 @@ body {
 }
 
 header {
-	background: url('./Media/Images/HeaderBackground.png');
+	background: url('.Media/Images/HeaderBackground.png');
 	padding-top: 10px;
 	padding-bottom: 10px;
 	min-height: 5px;
@@ -72,7 +72,7 @@ h1 {
 
 /* SIGN UP FORM */
 #SignUp {
-	background: url('./Media/Images/HeaderBackground.png') no-repeat 0;
+	background: url('Media/Images/HeaderBackground.png') no-repeat 0;
 	color: #EDDFD8;
 	text-align: center;
 	padding-top: 30px;
