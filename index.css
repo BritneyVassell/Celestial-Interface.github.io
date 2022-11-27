@@ -1,0 +1,321 @@
+/* ------------------------------------- TYPE SELECTORS */
+
+body {
+	font-family: Comic Sans MS;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: #333166;
+	/*blue*/
+}
+
+header {
+	background: url('../Media/Images/HeaderBackground.png');
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-height: 5px;
+	border-bottom: 3px solid #ffd800;
+}
+
+span {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #EDDFD8;
+	/*cream*/
+}
+
+header li {
+	font-style: normal;
+	font-size: 16px;
+	float: left;
+	display: inline;
+	padding: 5px 10px 10px 10px;
+	/* top, right, bottom, left */
+}
+
+header nav {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	float: right;
+}
+
+header #logo img {
+	float: left;
+	width: 20%;
+}
+
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+}
+
+/* ------------------------------------- ID SELECTORS */
+
+/* WELCOME SECTION */
+#Welcome {
+	padding: 30px;
+	color: #EDDFD8;
+	border-bottom: 3px solid #ffd800;
+}
+
+/* WELCOME SECTION (TABLE)*/
+#Welcome table {
+	width: 100%;
+}
+
+/* WELCOME SECTION (IMAGE (WELCOME TO JEOPARDY))*/
+#Welcome img {
+	width: 90%;
+}
+
+/* SIGN UP FORM */
+#SignUp {
+	background: url('../Media/Images/HeaderBackground.png') no-repeat 0;
+	color: #EDDFD8;
+	text-align: center;
+	padding-top: 30px;
+}
+
+#SignUp h2 {
+	text-shadow: 2px 2px 4px #000000;
+}
+
+/* GAME BOARD */
+#PlayGame {
+	border-top: 3px solid #ffd800;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#board {
+	margin: auto;
+	width: 80%;
+	display: none;
+}
+
+#board h1 {
+	color: #EDDFD8;
+	text-align: center;
+	font-size: 40px;
+}
+
+/* FOOTER OF PAGE */
+#footer {
+	border-top: 3px solid #ffd800;
+	padding: 30px;
+	color: #EDDFD8;
+	/*creamish white*/
+	text-align: right;
+}
+
+/* SCORE COUNTER */
+#score-count {
+	color: #DD62A8;
+}
+
+#start-game {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #DD62A8;
+	border: 1px solid white;
+	border-radius: 10%;
+	padding: 15px;
+	color: #EDDFD8;
+	font-weight: bold;
+	font-family: Comic Sans MS;
+	font-size: 18px;
+}
+
+#end-game {
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #DD62A8;
+	border: 1px solid white;
+	border-radius: 10%;
+	padding: 15px;
+	color: #EDDFD8;
+	font-weight: bold;
+	font-family: Comic Sans MS;
+	font-size: 18px;
+}
+
+#gameButtons {
+	text-align: center;
+}
+
+#category-row {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#clue-board {
+	flex-direction: column;
+}
+
+/* ------------------------------------- CLASS SELECTORS */
+
+.clue-row {
+	display: flex;
+}
+
+.questionPromptSection {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	color: #FFFFFF;
+	display: none;
+}
+
+.inputSection {
+	display: flex;
+	justify-content: center;
+}
+
+.questionPromptSection>div {
+	display: flex;
+	justify-content: center;
+}
+
+.questionPromptSection>div>button {
+	display: block;
+	border: 2px solid white;
+	background-color: #DD62A8;
+	color: white;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 8px;
+	font-size: 1rem;
+	font-weight: bold;
+	font-family: Comic Sans MS;
+}
+
+.clue-box {
+	display: flex;
+	align-items: center;
+	/*vertical*/
+	justify-content: center;
+	/*horizontal*/
+	border: 2px solid white;
+	background-color: #DD62A8;
+	/*pink */
+	color: white;
+	border-radius: 5px;
+	margin: 5px;
+	font-size: 2rem;
+	font-weight: bold;
+	height: 100px;
+	flex: 1;
+	text-transform: uppercase;
+}
+
+
+.category-box {
+	font-size: .8rem;
+	line-height: 25px;
+}
+
+.clicked-box {
+	font-size: 1rem;
+}
+
+/* ALL CONTAINERS */
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.container2 {
+	background-color: #ffd800;
+	/*yellow*/
+	height: 60px;
+	padding-top: 0.5px;
+	padding-bottom: 15px;
+}
+
+/* ALL BUTTONS */
+.my_button {
+	font-family: Comic Sans MS;
+	background-color: #DD62A8;
+	/*pink*/
+	color: #FFFFFF;
+	height: 50px;
+	width: 140px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid #65BAC6;
+	border-radius: 50%;
+}
+
+/* ALL BUTTONS ON HOVER */
+.my_button:hover {
+	color: #FFFFFF;
+	font-weight: bold;
+	cursor: pointer;
+	box-shadow: 2px 2px 5px white;
+}
+
+.my_button:disabled {
+	font-family: Comic Sans MS;
+	background-color: #cccccc;
+	/*pink*/
+	color: #333333;
+	height: 50px;
+	width: 140px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid #65BAC6;
+	border-radius: 50%;
+}
+
+/* DIVIDERS */
+.divider {
+	background-color: #ffd800;
+	color: #ffd800;
+	height: 2px;
+	text-align: center;
+}
+
+/* SIGN UP FORM */
+.form {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form input {
+	float: right;
+	width: 400px;
+	padding: 5px 10px;
+	border: 1px solid #DD62A8;
+	border-radius: 4px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 8px 0;
+	background-color: #EDDFD8;
+}
+
+.form label {
+	float: left;
+}
+
+/* ------------------------------------- ATTRIBUTE SELECTORS */
+
+input[name='answer'] {
+	/* display: block; */
+	width: 80%;
+	border: 2px solid white;
+	background-color: #DD62A8;
+	color: white;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 0.8em;
+	font-size: 1rem;
+	font-weight: bold;
+	height: 20px;
+	font-family: Comic Sans MS;
+}

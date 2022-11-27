@@ -1,0 +1,277 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	</meta>
+	<meta name="viewport" content="width=device-width, initial-scale = 1" />
+	<meta name="Author" content="Britney Vassell, Renae Beckford, Jonathan Masters" />
+	<meta name="Keywords" content="Jeopardy, Jeopardy online" />
+
+	<title> Home | Jeopardy Online! </title>
+
+	<link rel="stylesheet" href="index.css" />
+	<link rel="icon" type="image/x-icon" href="../Media/Images/FavIcon.png">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<div ID="logo">
+				<center>
+					<a href="index.html"><img src="../Media/Images/Logo.png" alt="Logo"> </img></a>
+				</center>
+			</div>
+
+			<!-- NAVIGATION BAR -->
+			<nav>
+				<ul>
+					<li>
+						<a href="">
+							<!-- Disable til form is complete -->
+							<button type="button" id="playNow" class="my_button"
+								title="You must sign up before playing."> Play Now! </button>
+						</a>
+					</li>
+					<li>
+						<a href="HowToPlay.html">
+							<button type="button" class="my_button" title="Learn how to play"> How to Play? </button>
+						</a>
+					</li>
+					<li>
+						<a href="AboutUs.html">
+							<button type="button" class="my_button" title="About the developers"> About Us </button>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+	</header>
+
+	<section id="Welcome">
+
+		<table>
+			<tr>
+				<!-- BASIC INNFORMATION ABOUT OUR GAME -->
+				<td style="padding:40px">
+					<h3>
+						Jeopardy! is an American game show
+						created by Merv Griffin. This game mimics
+						this game show, but with randomized categories,
+						questions and answers taken from an API. You
+						must sign up before gaining access to the game
+						board.
+						Enjoy!
+					</h3>
+
+					<center>
+						<a href="#SignUp">
+							<button type="button" class="my_button"> Start Playing </button>
+						</a>
+					</center>
+				</td>
+
+				<td style="width:55%;text-align:right;">
+					<!-- ICON -->
+					<img src="../Media/Gifs/BodyGif.gif" alt="Welcome" title="Jeopardy Online, By Celestial Interface">
+					</img>
+				</td>
+
+			</tr>
+		</table>
+
+	</section>
+
+	<section id="SignUp">
+
+		<a name="SignUp">
+			<h2>
+				Sign Up to Play!
+			</h2>
+		</a>
+
+		<!-- FORM TO REGISTER PLAYER -->
+		<div class="form">
+			<form id="SignUp">
+
+				<fieldset>
+					<br />
+					<label for="fname"> First Name *: </label>
+					<input type="text" id="fname" min="3" name="fname" placeholder="E.g. John" required />
+
+
+					<br /> <br />
+					<label for="lname"> Last Name *: </label>
+					<input type="text" id="lname" name="lname" placeholder="E.g. Brown" required />
+					<p id="lastNameVal" style="color:DarkPink"> </p>
+
+					<br /> <br />
+					<label for="email"> Email Address: </label>
+					<input type="text" id="email" name="email" placeholder="E.g. JohnBrown@SomeEmail.com"
+						pattern=".+@SomeEmail.com" />
+
+				</fieldset>
+
+				<br />
+
+				<!-- Field -->
+				<fieldset>
+					<br />
+					<label for="gender"> Gender *: </label>
+					<input type="text" id="gender" name="gender" placeholder="E.g. Male/Female" required />
+
+
+					<br /> <br />
+					<label for="dob"> Date of Birth (ages 12+) *: </label>
+					<input type="date" id="dob" name="dob" max="2010-11-21" onchange="getAge()" required />
+
+
+					<br /> <br />
+					<label for="age"> Age *: </label>
+					<input type="number" id="age" name="age" disabled />
+
+					<br /> <br />
+					<label for="eLevel"> Education level*:</label>
+					<input type="text" id="eLevel" name="eLevel" placeholder="Highschool/College" required />
+
+				</fieldset>
+
+				<br />
+
+				<!-- Field -->
+				<fieldset>
+					<br />
+					<label for="country">Country of Residence: </label>
+					<input type="text" id="country" name="country" />
+
+
+					<br /> <br />
+					<label for="street">Street Name: </label>
+					<input type="text" id="street" name="street" />
+
+
+					<br /> <br />
+					<label for="city"> Town of Residences *: </label>
+					<input type="text" id="town" name="town" required />
+
+
+					<br /> <br />
+					<label for="town">City of Residence: </label>
+					<input type="text" id="city" name="city" />
+
+				</fieldset>
+
+				<br />
+
+				<!-- Field -->
+				<fieldset>
+					<label for="photo">Profile Photo:</label>
+					<input type="file" id="photo" name="photo" />
+				</fieldset>
+
+				<br />
+				<fieldset>
+					<textarea name="showpercentage" id="showpercentage" cols="30" rows="10"></textarea>
+				</fieldset>
+				<br>
+
+				<br />
+				<fieldset>
+					<textarea name="showpercentage" id="showpercentage" cols="30" rows="10"></textarea>
+				</fieldset>
+				<br>
+
+				<a href="#gameBoard">
+					<button id="Play" class="my_button" title="Start playing" disabled>
+						Play
+					</button>
+				</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<button type="submit" class="my_button" id="Register" title="Confirm register">
+					Register
+				</button>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<button type="button" id="results" class="my_button" disabled> Results
+				</button>
+
+			</form>
+		</div>
+
+		<br />
+		<br />
+		<br />
+
+	</section>
+
+	<section id="PlayGame">
+		<div id="board">
+
+			<a name="gameBoard">
+				<h1>Jeopardy Online!</h1>
+			</a>
+
+			<br /><br />
+			<br /><br />
+
+			<div style="display: flex; justify-content: center;">
+
+				<button type="button" id="play_again" class="my_button" disabled> Play Again
+				</button>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<button type="button" id="end_game" class="my_button" disabled>End Game</button>
+
+			</div>
+
+
+			<!-- QUESTION BOX AND ANSWER BOX WILL BE SHOWN HERE. INVISIBLE UNTIL CARD IS SELECTED-->
+			<div class="questionPromptSection">
+				<h2 id="question"></h2>
+
+				<!-- Timer for each turn-->
+				<div id="timer">
+					<h3>00:00</h3>
+				</div>
+				<div class="inputSection">
+					<input type="text" class="answerInput" name="answer" id="answer">
+				</div>
+				<div>
+					<button id="submitAnswer" onclick="checkAnswer()">Answer</button>
+				</div>
+			</div>
+
+			<!-- BOARD IS DISPLAYED HERE -->
+			<section id="game-container">
+				<div>
+					<span>Score: $</span><span id="score">100</span>
+				</div>
+				<section id="category-row"></section>
+				<section id="clue-board"></section>
+			</section>
+			<!-- DISPLAYS SCORE-->
+		</div> <!-- ENDS "BOARD" DIV -->
+
+		<br />
+		<br />
+		<br />
+
+		<!-- LINK TO EXTERNAL JAVASCRIPT FILE-->
+
+		<script type="text/javascript" src="index.js"></script>
+
+	</section> <!-- ENDS "PLAY GAME" SECTION" -->
+
+
+	<footer id="footer">
+		<p>
+			<small>
+				Copyright &copy; 2022 by Britney Vassell, Renae Beckford, & Jonathan Masters. <br />
+				Created November 2022.
+			</small>
+		</p>
+	</footer>
+</body>
+
+</html>

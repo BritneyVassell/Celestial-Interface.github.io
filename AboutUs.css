@@ -1,0 +1,115 @@
+body{
+	font-family: Comic Sans MS;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 1.5;
+	padding: 0;
+	margin: 0;
+	background-color: #333166;
+}
+
+header{
+	background:url('../Media/Images/HeaderBackground.png');
+	color: #004AAD;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	min-height: 5px;
+    border-bottom: 3px solid #ffd800;	
+}
+
+header li{
+	font-style: normal;
+	font-size: 16px;
+	float: left;
+	display: inline;
+	padding: 5px 10px 10px 10px;	/* top, right, bottom, left */
+}
+
+header nav{
+	margin-top: 10px;
+    margin-bottom: 0px;	
+	float: right;
+}
+
+header #logo img{
+	float: left;
+	width: 20%;
+}
+
+#boxes{
+	padding: 30px;
+	color: #EDDFD8;	
+	border-bottom: 3px solid #ffd800;
+	margin-left: 30px;
+	min-height: 700px;
+}
+
+#boxes h1{
+	text-align: center;
+	color: #DD62A8;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+#boxes .box{
+	float: left;
+	text-align: center;
+	width: 25%;
+	padding: 50px;
+}
+
+#boxes img{
+	height: 300px;
+	width: 300px;
+}
+
+#boxes p{
+	font-style: normal;
+	font-size: 15px;
+	text-align: center;
+}
+
+#footer{
+	border-top: 3px solid #ffd800;
+	padding-top: 30px;
+	color: #EDDFD8;	
+	text-align: right;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;	
+}
+
+.container2{
+	background-color: #ffd800;
+	height: 60px;
+	padding-top: 0.5px;
+	padding-bottom:15px;
+}
+
+.my_button{
+    font-family: Comic Sans MS;
+    background-color: #DD62A8;
+	color: #FFFFFF;
+	height: 50px;
+	width: 140px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid #65BAC6;
+	border-radius: 50%;
+}
+
+.my_button:hover{
+	color: #FFFFFF;
+	font-weight: bold;
+	cursor:pointer;
+	box-shadow: 2px 2px 5px white;
+}
+
+.divider{
+    background-color: #ffd800;
+    color: #ffd800;
+    height: 2px;
+    text-align: center;
+}
