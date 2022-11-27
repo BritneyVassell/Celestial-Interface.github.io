@@ -136,7 +136,7 @@ function disableRegisterFormInputs() {
 // Fix dis
 function PlayGame(event) {
 
-
+    document.querySelector('#board').style.display = 'block'
     //INITIALIZE THE GAME BOARD ON PAGE LOAD
     if (event) {
         event.preventDefault()
